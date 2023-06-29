@@ -1,0 +1,33 @@
+So, I got a very interesting problem(according to me atleast) in the same interview as Problem 1
+
+Problem Statement:
+
+
+  Given a series,
+                 4 7 44 47 77 .... and so on
+                 we will given a term of this series and we need to find out at what 1 based index that number will occur
+
+My approach:
+
+    I had solved some problems like this before with dp, where I get two number and I had to make a number, only by multiplying them.
+    But here the case was totally different.
+
+    Any term here could be represented by , 10^n*a1+10^(n-1)*a2......an+1 where ai belongs to [4,7]
+
+    This surely didn't look solvable by nay such methods, I though of binary search but still I would have to genetrate all number till that.
+    I was already told the valuse of number and corresponding n can be quite large.
+
+    Hint: I was asked to work on the given input number.
+
+    From here it was quite clear to me what I needed to do:
+
+    1. Let suppose I get a number of sixe x, Then I have to just fill the boxes of size x with number {0,4,7}, limiting myself to 
+       the upperbound number. This is just a variation of digit dp.
+    2. I explained the thought process, I wasn't asked to code it.
+
+
+Post Interview:
+
+    After, the interview, I searched on the internet and I found out that is quite a popular question which can be solved by 
+    what digit is last taken. But It was an O(n) approach not O(log10(n)) approach like mine. Maybe there exist a soln by that
+    approach I am not sure.
