@@ -14,14 +14,14 @@ My approach:
 
     Any term here could be represented by , 10^n*a1+10^(n-1)*a2......an+1 where ai belongs to [4,7]
 
-    This surely didn't look solvable by nay such methods, I though of binary search but still I would have to genetrate all number till that.
-    I was already told the valuse of number and corresponding n can be quite large.
+    This surely didn't look solvable by any such methods, I though of binary search but still I would have to genetrate all number till that.
+    I was already told the valses of number and corresponding n can be quite large.
 
     Hint: I was asked to work on the given input number.
 
     From here it was quite clear to me what I needed to do:
 
-    1. Let suppose I get a number of sixe x, Then I have to just fill the boxes of size x with number {0,4,7}, limiting myself to 
+    1. Let suppose I get a number of size x, Then I have to just fill the boxes of size x with number {0,4,7}, limiting myself to 
        the upperbound number. This is just a variation of digit dp.
     2. I explained the thought process, I wasn't asked to code it.
 
